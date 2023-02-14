@@ -4,6 +4,15 @@
 
 
 
+There are some requirements of the Python environment. The python version is `3.8.5`.
+
+```markdown
+torch==1.9.0
+pandas==1.3.2
+numpy==1.19.5
+```
+
+
 The code of the project can be dirrectly run by the command below after adjusting the correct data path in the code `main.py.`
 
 ```markdown

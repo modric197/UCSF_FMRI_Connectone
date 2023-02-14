@@ -21,13 +21,20 @@ python main.py
 
 
 
-The data we use is in the folder `fMRI_connecomes`, while `fMRI_connecomes/ct` for control group and `fMRI_connecomes/ti` for tinnitus group. The original data of the control group and tinnitus group are in  `fMRI_connecomes/aroma30_2P_GSR_BN_control` and `fMRI_connecomes/aroma30_2P_GSR_BN_tinnitus` respectively, and we rename the data as label with index by  using data.py (after adjusting the correct data path) with the command below.
+The original data of the control group and tinnitus group are in  `fMRI_connecomes/aroma30_2P_GSR_BN_control` and `fMRI_connecomes/aroma30_2P_GSR_BN_tinnitus` respectively. We need to process the data as following in order to use it.
+
+```
+1. Create new folders "control" and "tinnitus".
+2. Copy the data of the control group and the tinnitus group into the corresponding new folder.
+3. Create new folders "ct" and "ti" for control group and tinnitus group respectively.
+4. Run the code 'data.py' using the command below for control folder and tinnitus folder (remember to adjust the lines with annotations to maske sure the data paths are correct).
+```
 
 ```markdown
 python data.py
 ```
 
-We store the two groups into `fMRI_connecomes/ct` and `fMRI_connecomes/ti` respectively. (To run the code, this step isn't needed since the data is already operated).
+At last, we store the two groups into `fMRI_connecomes/ct` and `fMRI_connecomes/ti` respectively.
 
 
 The summary of the project can be seen in the PDF file `Report.pdf`
